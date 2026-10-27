@@ -213,10 +213,10 @@ production_count = df["Production_Level"].value_counts()
 
 print("Crop Count by Production Level:")
 print(production_count)
-plt.savefig("top_5_crops_matplotlib.png", dpi=300, bbox_inches="tight")
+
 plt.show()
 plt.savefig("top_5_crops_seaborn.png", dpi=300, bbox_inches="tight")
-plt.show()
+
 top5 = df.nlargest(5, "Production_Tons")
 
 plt.figure(figsize=(10, 6))
